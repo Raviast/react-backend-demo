@@ -2,13 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const routes = require('./src/routes');
-const mongoose = require("./src/connectors/dbConnector")
-const { errorHandler } = require('./src/util/errorHandling');
+const routes = require('../src/routes');
+const mongoose = require("../src/connectors/dbConnector")
+const { errorHandler } = require('../src/util/errorHandling');
 const app = express();
 
 
-global.ErrorCodes = require('./src/constant/errorCodes')
+global.ErrorCodes = require('../src/constant/errorCodes')
 
 const port = 4000;
 
