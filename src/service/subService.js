@@ -31,6 +31,17 @@ class subService {
         }
     }
 
+    async getSubscription() {
+        try {
+            console.log('I am here');
+            
+            const result = await this.subscriptionDB.getByquery({});
+            return result ? result : [];
+        } catch (error) {
+            console.error(error);
+            throw error;
+        }
+    }
 
 }
 

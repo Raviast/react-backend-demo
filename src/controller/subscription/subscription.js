@@ -11,6 +11,6 @@ module.exports = async (req, res, next) => {
             return res.status(400).send({ code: error.code, message: error.message })
         }
         console.error('error', error.stack)
-        res.status(500).send({ message: 'Internan Server error' })
+        res.status(500).send({ message: 'Internal Server error' })
     }
 }

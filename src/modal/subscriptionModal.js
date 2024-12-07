@@ -6,7 +6,8 @@ const subscriptionSchema = new Schema({
   email: {
     type: String,
     index: true,
-    unique: true
+    unique: true,
+    required : true
   },
 
   createdAt: {

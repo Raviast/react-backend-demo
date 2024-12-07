@@ -3,8 +3,8 @@ const subService = require('../../service/subService')
 module.exports = async (req, res, next) => {
     try {
         const SubService = new subService();
-        const { value } = req.locals
-        const result = await SubService.getSubscription(value)
+        const result = await SubService.getSubscription();
+        console.log('result:::::::', result)
         return res.status(200).send(result)
     } catch (error) {
         if (error.code && error.message) {

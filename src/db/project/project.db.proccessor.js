@@ -11,14 +11,6 @@ class projectDb {
     async create(createData) {
         return await projectModal.create(createData)
     }
-    async update(uid, updateData) {
-        console.log(updateData)
-        return await projectModal.findOneAndUpdate({ _id: uid }, { $set: { ...updateData } })
-    }
-
-    async delete(id) {
-
-    }
 }
 
 module.exports = projectDb

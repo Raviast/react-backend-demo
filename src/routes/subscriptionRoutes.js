@@ -6,5 +6,6 @@ const subController = require('../controller/subscription');
 
 routes.post('/create-sub', subValidation.creatSubValidator, subController.subscription)
 
+routes.get('/all-sub', subController.getSubscription)
 
 module.exports = routes;

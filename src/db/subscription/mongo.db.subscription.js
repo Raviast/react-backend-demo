@@ -12,14 +12,6 @@ class signUpReqDb {
     async create(createData) {
         return await subscriptionModal.create(createData)
     }
-
-    async update(id, updateData) {
-        return await subscriptionModal.updateOne({ _id: id }, { $set: { ...updateData } });
-    }
-
-    async delete(id) {
-        return await subscriptionModal.deleteOne(id);
-    }
 }
 
 module.exports = signUpReqDb
