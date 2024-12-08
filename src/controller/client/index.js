@@ -1,7 +1,7 @@
-// const allProject = require("./allProjectController")
+const allClient = require("./allClientController")
 const addClient = require("./addClientController")
 
 module.exports = {
-    // allProject,
+    allClient,
     addClient,
 }

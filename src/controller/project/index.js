@@ -1,5 +1,5 @@
-const allProject = require("./allProjectController")
-const addProject = require("./addProjectController")
+const allProject = require("../project/allProjectController")
+const addProject = require("../project/addProjectController")
 
 module.exports = {
     allProject,

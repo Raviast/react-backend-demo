@@ -18,13 +18,13 @@ class clientService {
 
     async addClient(clientData) {
         try {
-            const clientData = {
+            const clientdata = {
                 name: clientData.name,
                 description: clientData.description,
                 designation: clientData.designation,
-                image: projectData.image,
+                image: clientData.image,
             };
-            const result = await this.clientDB.create(clientData);
+            const result = await this.clientDB.create(clientdata);
             return result;
         } catch (error) {
             throw error
