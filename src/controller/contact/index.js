@@ -1,7 +1,7 @@
-// const allProject = require("../contact/allProjectController")
+const allContact = require("../contact/allContactController")
 const addContact = require("../contact/addContactController")
 
 module.exports = {
-    // allProject,
+    allContact,
     addContact,
 }

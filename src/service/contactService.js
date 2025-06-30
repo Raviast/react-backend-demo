@@ -15,15 +15,15 @@ class contactService {
         }
     };
 
-    async addClient(contactData) {
+    async addContact(contactData) {
         try {
-            const contactData = {
+            const ContactData = {
                 name: contactData.name,
                 email: contactData.email,
                 mobileNumber: contactData.mobileNumber,
                 city: contactData.city,
             };
-            const result = await this.contactDB.create(contactData);
+            const result = await this.contactDB.create(ContactData);
             return result;
         } catch (error) {
             throw error

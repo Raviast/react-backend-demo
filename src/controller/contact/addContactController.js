@@ -2,8 +2,8 @@ const contactService = require('../../service/contactService')
 
 module.exports = async (req, res, next) => {
     try {
-        const ContactService = new contactService(); 
         const contactData = req.body;
+        const ContactService = new contactService(); 
         console.log('contactData:::::::::', contactData)
         const result = await ContactService.addContact(contactData)
         return res.status(200).send(result)

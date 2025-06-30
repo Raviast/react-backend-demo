@@ -1,9 +1,9 @@
-const projectService = require('../../service/projectService')
+const contactService = require('../../service/contactService')
 
 module.exports = async (req, res, next) => {
     try {
-        const ProjectService = new projectService(); 
-        const result = await ProjectService.getAllProject()
+        const ContactService = new contactService(); 
+        const result = await ContactService.getAllContact()
         return res.status(200).send(result)
     } catch (error) {
         if (error.code && error.message) {
